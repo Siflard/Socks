@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SocksPeMaz</string>
+    <string name="pemaz_x_socks">PeMAz x Socks</string>
+    <string name="collab">Collab</string>
+    <string-array name="Size">
+        <item>S 34-37</item>
+        <item>M 38-42</item>
+        <item>L 43-46</item>
+    </string-array>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

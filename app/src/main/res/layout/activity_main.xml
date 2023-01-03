@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="1276dp"
+        android:layout_height="1000dp"
+        android:layout_marginTop="200dp"
+        android:foreground="@drawable/pngtreetexture_background_of_color_laser_989389"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="5dp"
+        android:background="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="100dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="40dp"
+        android:background="#000000"
+        android:rotation="90"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.044" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="95dp"
+        android:layout_height="90dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icons8_shopping_cart_48" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="291dp"
+        android:layout_height="87dp"
+        android:rotationY="0"
+        android:text="@string/pemaz_x_socks"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/black"
+        android:translationX="20dp"
+        android:translationY="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/collab"
+        android:layout_width="139dp"
+        android:layout_height="190dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="296dp"
+        android:contentDescription="@string/collab"
+        android:foreground="@drawable/simpson2_19_99"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="139dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="88dp"
+        android:text="   Collab"
+        android:textColor="@color/black"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="@+id/collab"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="@+id/collab"
+        app:layout_constraintTop_toTopOf="@+id/collab" />
+
+    <ImageButton
+        android:id="@+id/classique"
+        android:layout_width="139dp"
+        android:layout_height="190dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="296dp"
+        android:contentDescription="@string/collab"
+        android:foreground="@drawable/white1_11_99"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/classiquetext"
+        android:layout_width="139dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="88dp"
+        android:text="   Classic"
+        android:textColor="@color/black"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="@+id/classique"
+        app:layout_constraintStart_toStartOf="@+id/classique"
+        app:layout_constraintTop_toTopOf="@+id/classique" />
+
+
+    <ImageButton
+        android:id="@+id/Vegan"
+        android:layout_width="139dp"
+        android:layout_height="190dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="52dp"
+        android:contentDescription="@string/collab"
+        android:foreground="@drawable/vegan1_12_99"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <ImageButton
+        android:id="@+id/Best_Sellers"
+        android:layout_width="139dp"
+        android:layout_height="190dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="52dp"
+        android:contentDescription="@string/collab"
+        android:foreground="@drawable/white2_10_49"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/Best_sellers_text"
+        android:layout_width="139dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="88dp"
+        android:text="Best Sellers"
+        android:textColor="@color/black"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="@+id/Best_Sellers"
+        app:layout_constraintStart_toStartOf="@+id/Best_Sellers"
+        app:layout_constraintTop_toTopOf="@+id/Best_Sellers" />
+
+    <TextView
+        android:id="@+id/VeganText"
+        android:layout_width="139dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="88dp"
+        android:text="   Vegan"
+        android:textColor="@color/black"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="@+id/Vegan"
+        app:layout_constraintStart_toStartOf="@+id/Vegan"
+        app:layout_constraintTop_toTopOf="@+id/Vegan" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#008706"
+        android:foreground="@drawable/screenshot_2022_11_29_08_17_30_641_2"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="112dp"
+        android:background="#00FFFFFF"
+        android:text="Shop"
+        android:textColor="@color/black"
+        android:visibility="visible"
+        app:iconTint="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

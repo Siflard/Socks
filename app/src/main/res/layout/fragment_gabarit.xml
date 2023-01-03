@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+ xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardElevation="6dp"
+    tools:ignore="ExtraText">
+    tools:context=".gabarit">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        >
+
+    <ImageView
+        android:id="@+id/Image_chaussette"
+        android:layout_width="142dp"
+        android:layout_height="142dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bat1_11_99" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:gravity="center"
+        android:text="BATMAN COMIC CREW SOCK"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/Image_chaussette"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Size:"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/Image_chaussette"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+        <TextView
+        android:id="@+id/prix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="17dp"
+        android:text="prix"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/Size_S"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:background="#03FFFFFF"
+            android:text="S"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/Image_chaussette"
+            app:layout_constraintTop_toBottomOf="@+id/size"
+            android:onClick="clicks"/>
+
+        <Button
+            android:id="@+id/size_M"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:background="#00FFFFFF"
+            android:text="M"
+
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/Size_S"
+            app:layout_constraintTop_toBottomOf="@+id/size" />
+
+        <Button
+            android:id="@+id/size_L"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:background="#00FFFFFF"
+            android:text="L"
+
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/size_M"
+            app:layout_constraintTop_toBottomOf="@+id/size" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
